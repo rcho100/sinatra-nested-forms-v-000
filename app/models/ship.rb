@@ -7,7 +7,7 @@ class Ship
     @name = args[:name]
     @type = args[:type]
     @booty = args[:booty]
-    @all << self
+    SHIPS << self
   end
 
   def self.all
@@ -15,7 +15,7 @@ class Ship
   end
 
   def self.clear
-    @all = []
+    SHIPS = []
   end
 
 end
