@@ -13,7 +13,6 @@ module FormsLab
 
     post '/pirates' do
       binding.pry
-      # attributes = params[:pirate][:name], params[:pirate][:weight], params[:pirate][:height]
       @pirate = Pirate.new(params[:pirate])
 
       params[:pirate][:ships].each do |details|
